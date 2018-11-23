@@ -1,0 +1,65 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "browser": true,
+    "jest": true
+  },
+  "plugins": [
+    "react",
+    "jest"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 7
+  },
+  "rules": {
+    "max-lines": ["error", { "max": 200, "skipBlankLines": true }],
+    "no-console": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "max-len": "error",
+    //warnings que tem q virar error
+    "prefer-destructuring": "warn",
+    "no-param-reassign": ["warn"],
+    "no-tabs": "warn",
+    "no-restricted-syntax": "warn",
+    "class-methods-use-this": "warn",
+    "no-return-assign": "warn",
+    "no-unused-expressions": "warn",
+    "no-mixed-operators": "warn",
+    "no-restricted-globals": "warn",
+    "consistent-return": "warn",
+    "object-curly-newline": "warn",
+    "no-shadow": "warn",
+    "no-nested-ternary": "warn",
+    "guard-for-in": "warn",
+    "new-cap": ["warn"],
+
+    "import/first": ["warn"],
+    "import/prefer-default-export": ["warn"],
+    "import/no-duplicates": "warn",
+
+    "react/prop-types": "warn",
+    "react/sort-comp": "warn",
+    "react/jsx-closing-tag-location": "warn",
+    "react/jsx-no-bind": "warn",
+    "react/no-did-mount-set-state": "warn",
+    "react/forbid-prop-types": "warn",
+    "react/no-unused-state": "warn",
+    "react/require-default-props": "warn",
+    "react/no-array-index-key": "warn",
+    "react/display-name": "warn",
+    "react/prefer-stateless-function": "warn",
+
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/label-has-for": "warn",
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+  }
+}

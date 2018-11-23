@@ -1,0 +1,6 @@
+*.py
+*.txt
+*.json
+.env.*
+build/
+public/
