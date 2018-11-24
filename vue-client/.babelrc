@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "stage-2",
+    ["env", { "modules": false }]
+  ],
+  "plugins": [
+    "transform-object-rest-spread"
+  ]
+}

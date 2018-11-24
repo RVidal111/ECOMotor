@@ -1,0 +1,224 @@
+/* GENERAL STYLE */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* BACKEND CONTENT */
+
+div.backend-content {
+    grid-column: 2 / 3;
+}
+
+div.backend-content {
+    background: #FFFFFF url('../img/background/bg.png') left top repeat;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+div.backend-content div.content,
+div.frontend-content div.content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30.15px 1fr;
+}
+
+/* CONTENT BODY */
+
+div.backend-content div div.content-body {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 10px 1fr 10px;
+}
+
+/* CONTENT BODY CONTENT */
+
+div.backend-content div div.content-body div.content-body-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    grid-template-columns: 1fr;
+    grid-template-rows: 51px 1fr;
+}
+
+/* CONTENT BODY CONTENT HEADER */
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 15px 1fr 1fr 15px;
+    grid-template-rows: 10px 30px 11px;
+    background: #3a3e48;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-header div.left-btn-group {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-header div.right-btn-group {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-header div.right-btn-group div.form-group {
+    position: relative;
+    margin-top: 17.5px;
+    margin-right: 17.5px;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-header div.right-btn-group div.form-group input {
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 30px;
+    top: 16px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-header div.right-btn-group div.form-group i {
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 15px;
+    padding: 7.5px 7.5px;
+    color: #333;
+    transition: .3s;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-header div.right-btn-group div.form-group input:focus + i {
+    color:#64B5F6;
+}
+
+/* CONTENT BODY CONTENT BODY */
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 10px 99.4% 12px;
+    grid-template-rows: 10px var(--heightContent) 10px;
+    background: #E8E8E8 url('../img/background/bg.png') left top repeat;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+}
+
+/* CONTENT BODY CONTENT BODY DATALIST */
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul.content-body-ul {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 0px;
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li.datalist {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: 110px;
+    margin-bottom: 3px;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li div.datalist-data {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 1fr;
+    background: #FFFFFF url('../img/background/bg.png') left top repeat;
+    border-radius: 5px;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li div.datalist-data div.datalist-content-info {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    grid-template-rows: 1fr;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li div.datalist-data div.datalist-content-info div.datalist-brands-content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 1fr 40px 5px 40px 1fr;
+    display: grid;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li div.datalist-data div.datalist-content-info div.datalist-brands-content div.datalist-content-name {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 30px;
+    font-weight: bold;
+    color: #434a54;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.datalist-brands-content .datalist-content-web {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li div.datalist-data div.datalist-content-info div.datalist-content-dates {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 12.5px 1fr 5px 1fr 12.5px;
+    display: grid;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li div.datalist-data div.datalist-content-info div.datalist-content-dates div.datalist-content-flex {
+    display: flex;
+}
+
+div.backend-content div div.content-body div.content-body-content div.content-body-content-body ul li div.datalist-data div.datalist-content-info div.datalist-content-dates div.datalist-content-flex div.datalist-content-bold {
+    font-weight: bold;
+}

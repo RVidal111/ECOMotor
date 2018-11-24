@@ -38,7 +38,7 @@
     "ignore-styles": "^5.0.1",
     "jest": "^23.5.0",
     "lint": "^1.1.2",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
