@@ -1,10 +1,6 @@
 # API de Ecomotor
 
-Intalar dependencias 
-  npm i 
+Ecomotor API
 
-Modulos que ocupo 
-  
-   nodemon
 
 
